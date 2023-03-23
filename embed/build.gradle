@@ -36,6 +36,6 @@ task buildFatJar(type: Jar) {
         attributes 'Main-Class': 'hello.embed.EmbedTomcatSpringMain'
     }
     duplicatesStrategy = DuplicatesStrategy.WARN
-    from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
+    from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipT ree(it) } }
     with jar
 }
