@@ -31,7 +31,7 @@ public class MyDataSourcePropertiesV3 {
     public static class Etc {
         @Min(1) @Max(999)
         private int maxConnection;
-        @DurationMin(seconds = 1) @DurationMax(seconds = 10)
+        @DurationMin(seconds = 1) @DurationMax(seconds = 60)
         private Duration timeout;
         private List<String> options = new ArrayList<>();
 
