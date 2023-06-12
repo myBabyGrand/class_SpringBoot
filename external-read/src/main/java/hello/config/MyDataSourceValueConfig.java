@@ -28,7 +28,15 @@ public class MyDataSourceValueConfig {
 
     @Bean
     public MyDataSource myDataSource1(){
-        return MyDataSource.builder().url(url).username(username).password(password).maxConnection(maxConnection).timeout(timeout).options(options).build();
+        return MyDataSource
+                .builder()
+                .url(url)
+                .username(username)
+                .password(password)
+                .maxConnection(maxConnection)
+                .timeout(timeout)
+                .options(options)
+                .build();
     }
 
     @Bean

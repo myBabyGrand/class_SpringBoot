@@ -28,6 +28,14 @@ public class MyDataSourceEnvConfig {
         Duration timeout = env.getProperty("my.datasource.etc.timeout", Duration.class);
         List<String> options = env.getProperty("my.datasource.etc.options", List.class);
              
-        return MyDataSource.builder().url(url).username(username).password(password).maxConnection(maxConnection).timeout(timeout).options(options).build();
+        return MyDataSource
+                .builder()
+                .url(url)
+                .username(username)
+                .password(password)
+                .maxConnection(maxConnection)
+                .timeout(timeout)
+                .options(options)
+                .build();
     }
 }
